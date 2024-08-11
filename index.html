@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LMS</title>
+    <!-- Favicon using Bootstrap Icon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets//css/style.css" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- box-icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Summernote CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Summernote JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote-bs4.min.js"></script>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!-- <aside>
+        <nav>
+          <ul>
+            <li>Dashboard</li>
+            <li>Complaints</li>
+            <li>All Complaints</li>
+            <li>Inprocess Complaints</li>
+            <li>Completed Complaints</li>
+            <li>Create Complaint</li>
+          </ul>
+        </nav>
+  
+      </aside> -->
+      <main>
+        <section id="lms-form">
+          <div class="container">
+            <div class="card form-container mt-5 mb-5 p-3">
+              <!-- basic info section -->
+              <div class="basic-info mb-4">
+                <div class="section-title">
+                  <h2>Basic Information</h2>
+                </div>
+  
+                <div class="row input-container mt-2 d-flex">
+                  <fieldset disabled class="col-md-3 col-12 form-group">
+                    <label htmlFor="registration" class="form-label">
+                      Registration ID (RID)
+                    </label>
+                    <input
+                      type="number"
+                      id="registration"
+                      class="form-control border-secondary"
+                      name="registration"
+                      placeholder="Registration ID"
+                    />
+                  </fieldset>
+  
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="chalan_number" class="form-label">
+                      Chalan Number <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      id="chalan_number"
+                      class="form-control border-secondary"
+                      name="chalan_number"
+                      placeholder="Chalan Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="chalan_number" class="form-label">
+                      Nikaya <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-select border-secondary">
+                      <option selected>Others</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="branch_number" class="form-label">
+                      Branch Name <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-select border-secondary">
+                      <option selected>Others</option>
+                      <option value="1">Basundhara</option>
+                      <option value="2">Lazimpat</option>
+                      <option value="3">Baneshwor</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="current_handler" class="form-label">
+                      Current Handler <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="current_handler"
+                      class="form-control border-secondary"
+                      name="chalan_number"
+                      placeholder="Current Handler"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="initiator_name" class="form-label">
+                      Initiator Name <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="initiator_name"
+                      class="form-control border-secondary"
+                      name="initiator_name"
+                      placeholder="Initiator Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="approver" class="form-label">
+                      Approver <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-select border-secondary">
+                      <option selected>Others</option>
+                      <option value="1">Ram</option>
+                      <option value="2">Hari</option>
+                      <option value="3">Shyam</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="account_number" class="form-label">
+                      Account Number <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      id="account_number"
+                      class="form-control border-secondary"
+                      name="account_number"
+                      placeholder="Account Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="account_holder_name" class="form-label">
+                      Account Holder Name <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="account_holder_name"
+                      class="form-control border-secondary"
+                      name="account_holder_name"
+                      placeholder="Account Holder Name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+  
+              <!-- subject section -->
+  
+              <div class="subject mb-4">
+                <div class="section-title">
+                  <h2>Subject</h2>
+                </div>
+  
+                <div class="row input-container mt-2 d-flex flex-column">
+                  <div class="col-md-3 col-12 form-group">
+                    <label htmlFor="chalan_number" class="form-label">
+                      Type/Subject <span class="text-danger">*</span>
+                    </label>
+                    <select class="form-select border-secondary">
+                      <option selected>Others</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-9 col-12 form-group">
+                    <label htmlFor="branch_number" class="form-label">
+                      Letter Content <span class="text-danger">*</span>
+                    </label>
+                    <textarea id="summernote"></textarea>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- attachment section -->
+              <div class="attachment mb-4">
+                <div class="section-title">
+                  <h2>Attachment</h2>
+                </div>
+  
+                <div class="row input-container mt-2 d-flex flex-column">
+                  <div class="col-md-6 col-12 form-group">
+                    <div class="input-group mb-3">
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="inputGroupFile02"
+                      />
+                      <label class="input-group-text" for="inputGroupFile02"
+                        >Upload</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="register-btn d-flex justify-content-start gap-4">
+                <button type="submit" class="btn btn-warning">
+                  <p class="m-0">
+                    <span class="me-2"><i class="bi bi-arrow-left"></i></span
+                    >Return
+                  </p>
+                </button>
+                <button type="submit" class="btn btn-success">
+                  <p class="m-0">
+                    Forward<span class="ms-2"
+                      ><i class="bi bi-arrow-right"></i
+                    ></span>
+                  </p>
+                </button>
+                <button type="submit" class="btn btn-danger">
+                  <p class="m-0">
+                    Reject<span class="ms-2"><i class="bi bi-x-lg"></i></span>
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+   
+
+    <script src="/assets/js/script.js" defer></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
